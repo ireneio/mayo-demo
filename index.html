@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <video autoplay muted loop id="vid">
+      Your browser does not support HTML5 video.
+    </video>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="header">
+              <div class="logo"></div>
+              <nav class="nav">
+                <a href="javascript:;">產品服務</a>
+                <a href="javascript:;">客戶案例</a>
+                <a href="javascript:;">特別企劃</a>
+                <a href="javascript:;">最新活動</a>
+                <a href="javascript:;">更多文章</a>
+                <div class="nav-bar"></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="banner-title">MAYO人資系統</div>
+            <div class="banner-subtitle">滿足人資一切需求</div>
+            <div class="banner-btnblock">
+              <button class="banner-btn">立即預約了解</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="footer-logobox">
+              <div class="footer-logo">
+                <div class="footer-logo-1"></div>
+              </div>
+              <div class="footer-logo">
+                <div class="footer-logo-2"></div>
+              </div>
+              <div class="footer-logo">
+                <div class="footer-logo-3"></div>
+              </div>
+              <div class="footer-logo footer-logo-active">
+                <div class="footer-logo-4"></div>
+              </div>
+              <div class="footer-logo">
+                <div class="footer-logo-5"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  window.addEventListener('load', function () {
+    const vidList = [
+      'https://ak.picdn.net/shutterstock/videos/1034587586/preview/stock-footage-motivated-funny-diverse-business-team-people-dancing-celebrating-success-at-corporate-party-on.webm',
+      'https://ak.picdn.net/shutterstock/videos/1032911195/preview/stock-footage-happy-successful-multiethnic-business-team-give-high-five-sit-at-table-motivated-diverse.webm',
+      'https://ak.picdn.net/shutterstock/videos/1014741395/preview/stock-footage-happy-african-american-male-team-leader-doing-silly-winner-dance-in-multiethnic-loft-office.webm',
+      'https://ak.picdn.net/shutterstock/videos/1009869923/preview/stock-footage-group-of-executives-working-together-on-project-in-office-k.webm'
+    ]
+    const vid = document.querySelector('#vid')
+    const source = document.createElement('source')
+
+    source.setAttribute('src', vidList[Math.floor(Math.random() * 4)])
+    source.setAttribute('type', 'video/mp4')
+    vid.appendChild(source)
+    vid.play()
+  })
+</script>
