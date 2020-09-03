@@ -40,7 +40,7 @@ header {
 .logo {
   width: 51.8px;
   height: 47.3px;
-  background-image: url(/img/Group7138.svg);
+  background-image: url(./img/Group7138.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -57,7 +57,7 @@ header {
   margin: 0 38px;
 }
 .nav-bar {
-  background-image: url(/img/Group3082.svg);
+  background-image: url(./img/Group3082.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -150,19 +150,19 @@ header {
   margin-top: 22px;
 }
 .footer-logo-1 {
-  background-image: url(/img/Group6874.svg);
+  background-image: url(./img/Group6874.svg);
 }
 .footer-logo-2 {
-  background-image: url(/img/Group6878.svg);
+  background-image: url(./img/Group6878.svg);
 }
 .footer-logo-3 {
-  background-image: url(/img/Group7025.svg);
+  background-image: url(./img/Group7025.svg);
 }
 .footer-logo-4 {
-  background-image: url(/img/MaskGroup156@2x.png);
+  background-image: url(./img/MaskGroup156@2x.png);
 }
 .footer-logo-5 {
-  background-image: url(/img/Linkedin-Logo-2003–2011-4@2x.png);
+  background-image: url(./img/Linkedin-Logo-2003–2011-4@2x.png);
 }
 
 #vid {
